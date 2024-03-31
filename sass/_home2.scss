@@ -1,0 +1,108 @@
+header {
+    .header_contant {
+        .header_child {
+            #header_child_2_img2 {
+                // @include bgimg('../img/hero-2.png');
+                box-shadow: 10px 2px var(--primary);
+                align-items: center;
+                img{
+                    height: 80%;
+                    margin-left: -10%;
+                }
+            }
+
+            .header_child_1 {
+                pre[class*="language-"] {
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    border-radius: 0;
+                    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+                    font-size: 1rem;
+                    // line-height: 1.5rem;
+                }
+
+                code[class*="language-"],
+                pre[class*="language-"] {
+                    text-align: left;
+                    color: #eee;
+                    background: var(--bg_color);
+
+                }
+
+                .highlight-line {
+                    background-color: rgba(55, 65, 81, .5);
+                    border-left: 4px solid var(--secondary);
+                }
+
+                .code-line {
+                    display: block;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    line-height: 10px;
+                }
+
+                .token.string {
+                    color: #a5e844;
+                }
+
+                .token.keyword {
+                    color: #c792ea;
+                }
+                .token.operator {
+                    color: #89ddff;
+                  }
+                  .token.punctuation {
+                    color: #89ddff;
+                  }
+
+                .line-number::before {
+
+                    display: inline-block;
+                    width: 1rem;
+                    text-align: right;
+                    margin-right: 16px;
+                    margin-left: -8px;
+                    color: rgba(156, 163, 175, .3);
+                    content: attr(line);
+
+                }
+            }
+        }
+    }
+}
+
+header .header_contant #header_child2 .header_child_1 #projectes2 {
+    grid-template-columns: repeat(2, 1fr);
+
+    #projectes_child_3 {
+        #text3 {
+            padding-left: 4rem;
+        }
+    }
+
+}
+
+header .header_contant #header_child2 .header_child_1 #header_child_btn2 {
+    padding-top: 20rem;
+}
+
+header .header_contant #header_child2 .header_child_1 .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header .header_contant #header_child2 .header_child_1 .btn .header_child_btn2 {
+    padding-top: 20rem;
+
+    a {
+        font-size: 20px;
+        color: white;
+        // border-bottom: 3px solid darken($color: $primary, $amount: 10%);
+        transition: all 0.5s;
+
+        &:hover {
+            border-bottom: 3px solid var(--primary);
+            transition: all 0.5s;
+        }
+    }
+}

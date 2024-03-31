@@ -1,0 +1,18 @@
+@mixin displaygrid($colums, $gap: 10px, $with: 1fr) {
+    display: grid;
+    grid-template-columns: repeat($colums, $with);
+    gap: $gap;
+}
+
+@mixin displayflex($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin bgimg($address, $fixed: initial, $value1: rgba(0, 0, 0, 0), $value2: rgba(0, 0, 0, 0)) {
+    background-image: linear-gradient($value1, $value2), url($address);
+    background-attachment: $fixed;
+    // background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

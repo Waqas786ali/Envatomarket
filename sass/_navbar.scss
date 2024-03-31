@@ -1,0 +1,32 @@
+.navbar{
+    background-color:var(--bg_color);
+    position: fixed;
+    z-index: 100;
+    height: 20px;
+    width: 98.1%;
+    @include displaygrid(2,10px,1fr);
+    padding: 0rem 1rem;
+    .nav_heading{
+        img{
+            width: 150px;
+            height:50px;
+        }
+    }
+    .nav_btn{
+        text-align: end;
+        padding: 1rem 0 0 0;
+        justify-content: center;
+        a{
+            padding: 0.4rem 1rem;
+            background-color: var(--primary);
+            color: var(--btn_white);
+            border-radius: 3px;
+            font-size: 14px;
+            transition: all 0.5s;
+            &:hover{
+                // background-color: darken($color:var(--primary), $amount: 5%);
+                transition: all 0.5s;
+            }
+        }
+    }
+}

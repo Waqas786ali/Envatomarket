@@ -1,0 +1,201 @@
+header {
+    .header_contant {
+        .header_contant_child {
+            .header_child {
+                .project {
+                    padding: 2rem;
+
+                    .project_child {
+                        h1 {
+                            font-size: 35px;
+                        }
+
+                        p {
+                            padding: 2rem 0;
+                            font-size: 17px;
+                            color: lightgray;
+                        }
+
+                        .project_child_cards {
+                            padding: 2rem 0;
+                            @include displaygrid(3, 10px, 1fr);
+
+                            .project_child_cards_child {
+                                background: linear-gradient(to bottom right, var(--linear-gradient2));
+                                color: black;
+                                display: grid;
+                                height: auto;
+                                grid-template-rows: 70% 31%;
+                                cursor: pointer;
+
+                                &:hover .cards_end {
+                                    background-color: rgb(33, 33, 33) !important;
+
+                                    h4 {
+                                        color: white;
+                                    }
+                                }
+
+                                a {
+                                    color: black;
+                                }
+
+                                .cards_heading {
+                                    padding: 1rem 2rem;
+
+                                    h3 {
+                                        font-size: 22px;
+                                        color: var(--secondary);
+
+                                        span {
+                                            color: black;
+                                        }
+                                    }
+
+                                    p {
+                                        padding: 0;
+                                        color: black;
+                                        font-size: 17px;
+                                        padding-top: 1rem !important;
+                                    }
+                                }
+
+                                .cards_end {
+                                    padding: 1rem 2rem 2rem 2rem;
+                                    text-align: center;
+                                    background-color: white !important;
+                                    @include displaygrid(3, 10px, 1fr);
+
+                                    h4 {
+                                        margin-top: 0.5rem;
+                                        font-weight: normal;
+
+                                        .text-yellow-500 {
+                                            color: rgb(201, 201, 4);
+                                        }
+
+                                        .text-beta {
+                                            color: green;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .cards2 {
+                            .cards2_child {
+                                @include displaygrid(2, 50px, 1fr);
+                                height:550px;
+                                margin-top: 1rem;
+                                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+                                background-color: rgb(32, 32, 32);
+
+
+                                &:Hover .cards2_img a .pc_img img,
+                                &:Hover .cards2_img a .mobile_img img {
+                                    transform: scale(1.1);
+                                    transition: all 0.5s;
+                                }
+                                &:hover .cards2_contant a h1{
+                                    color: var(--primary) !important;
+                                    transition: all 0.5s;
+                                }
+
+                                .cards2_img {
+                                    padding: 5rem 0;
+                                    transition: all 0.5s;
+                                    height: 50%;
+
+                                    a {
+                                        width: 100%;
+                                        @include displaygrid(2, 0px, 1fr);
+                                        grid-template-columns: 70% 30%;
+
+                                        .pc_img {
+                                            padding-top: 0.3rem;
+                                            transition: all 0.5s;
+                                            margin-left: 2rem;
+
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+
+                                        .mobile_img {
+                                            transition: all 0.5s;
+
+                                            img {
+                                                box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.162);
+                                                width: 100%;
+                                                height: 70%;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .cards2_contant {
+                                    padding: 2rem 1rem 0rem 1rem;
+                                    transition: all 0.5s;
+
+                                    .cards_contant_img {
+                                        img {
+                                            width: 150px;
+                                            background-color: gray;
+                                        }
+                                    }
+
+                                    a {
+                                        h1 {
+                                            font-size: 30px;
+                                            color:white;
+                                            transition: all 0.5s;
+                                        }
+                                    }
+
+                                    p {
+                                        padding: 1rem 0 !important;
+                                        font-size: 15px;
+                                    }
+
+                                    h3 {
+                                        color: var(--secondary);
+                                        font-size: 16px;
+                                    }
+
+                                    .cards_contant_btn {
+                                        display: flex;
+                                        padding: 1rem 0;
+                                        gap: 10px;
+
+                                        a {
+                                            font-size: 12px;
+                                            color:var(--primary2);
+                                            padding: 0.5rem;
+                                            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+                                            background-color: var(--a_btn);
+
+                                            &:hover {
+                                                background-color:var(--a_btn2);
+                                                transition: all 0.5s;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .cards_contant_info {
+                                    @include displaygrid(2, 10px, 1fr);
+
+                                    .cards_contant_info_child {
+                                        p {
+                                            padding: 0.3rem 0 !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

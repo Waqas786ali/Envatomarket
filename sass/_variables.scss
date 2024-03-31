@@ -1,0 +1,95 @@
+// $primary:#93e727;
+// $primary: orange;
+// $primary:rgb(241, 42, 204);
+// $primary:rgb(59, 130, 246);
+html[data-theme='green'] {
+    --primary: #93e727;
+    --primary2: #31c620;
+    --primary3: rgb(147, 233, 27);
+    --primary4: rgb(39, 158, 39);
+    --primary5: rgba(229, 215, 90, 0.5);
+    --primary6: rgba(90, 228, 66, 0.5);
+    --a_btn: rgba(34, 197, 94, 0.202);
+    --a_btn2: rgba(34, 197, 94, 0.302);
+    --linear-gradient2: rgb(229, 255, 165), rgb(183, 255, 0), #31c620;
+    --boder-linear-gradient: blue, green, yellow;
+    --box-shadow: var(--primary5) 5px 5px, var(--primary6) 10px 10px;
+    --secondary: rgb(59, 130, 246);
+    --btn_white: white;
+    --linear-gradient: var(--primary3), var(--primary4);
+    --linear-gradient3: rgba(0, 0, 0, 1), var(--primary2), var(--primary), rgba(255, 251, 0, 0.851);
+    --scrollbar-color: var(--primary3) var(--primary4);
+    --bg_color: black;
+    --bg_color2: #262626;
+    --text_color: white;
+    --btn_color: white;
+}
+
+html[data-theme='yellow'] {
+    --primary: orange;
+    --primary3: orange;
+    --primary4: rgb(255, 98, 0);
+    --primary2: rgb(255, 98, 0);
+    --primary5: rgba(255, 166, 0, 0.431);
+    --primary6: rgb(255, 68, 0);
+    --a_btn: rgba(255, 98, 0, 0.198);
+    --a_btn2: rgba(255, 98, 0, 0.151);
+    --linear-gradient2: rgb(238, 173, 133), rgb(255, 98, 0), rgb(255, 68, 0);
+    --boder-linear-gradient: blue, rgb(255, 68, 0), rgb(255, 98, 0);
+    --box-shadow: var(--primary5) 5px 5px, var(--primary6) 10px 10px;
+    --secondary: rgb(59, 130, 246);
+    --btn_white: white;
+    --linear-gradient: var(--primary3), var(--primary4);
+    --linear-gradient3: rgba(0, 0, 0, 1), var(--primary2), var(--primary), rgba(255, 251, 0, 0.851);
+    --scrollbar-color: var(--primary3) var(--primary4);
+    --bg_color: black;
+    --bg_color2: #262626;
+    --text_color: white;
+    --btn_color: white;
+}
+
+html[data-theme='pink'] {
+    --primary: rgb(241, 42, 204);
+    --primary3: rgb(239, 98, 213);
+    --primary4: rgb(102, 27, 109);
+    --primary2: rgb(182, 21, 197);
+    --primary5: rgba(247, 50, 211, 0.623);
+    --primary6: rgba(241, 42, 204, 0.361);
+    --a_btn: rgba(241, 42, 204, 0.194);
+    --a_btn2: rgba(241, 42, 204, 0.503);
+    --linear-gradient2: rgb(241, 163, 226), rgb(240, 107, 216), rgb(240, 107, 216);
+    --boder-linear-gradient: blue, rgb(240, 107, 216), rgb(246, 36, 207)
+    --box-shadow: var(--primary5) 5px 5px, var(--primary6) 10px 10px;
+    --secondary: rgb(59, 130, 246);
+    --btn_white: white;
+    --linear-gradient: var(--primary3), var(--primary4);
+    --linear-gradient3: rgba(0, 0, 0, 1), var(--primary2), var(--primary), rgba(255, 251, 0, 0.851);
+    --scrollbar-color: var(--primary3) var(--primary4);
+    --bg_color: black;
+    --bg_color2: #262626;
+    --text_color: white;
+    --btn_color: white;
+}
+
+html[data-theme='blue'] {
+    --primary: rgb(59, 130, 246);
+    --primary3: rgb(59, 130, 246);
+    --primary4: rgb(38, 78, 143);
+    --primary2: rgb(59, 130, 246);
+    --primary5: rgba(59, 131, 246, 0.608);
+    --primary6: rgba(59, 131, 246, 0.476);
+    --a_btn: rgba(59, 131, 246, 0.209);
+    --a_btn2: rgba(59, 131, 246, 0.335);
+    --linear-gradient2: rgb(135, 178, 247), rgb(71, 134, 237), rgb(0, 98, 255);
+    --boder-linear-gradient: red, rgb(0, 98, 255), rgb(108, 159, 240)
+        --box-shadow: var(--primary5) 5px 5px, var(--primary6) 10px 10px;
+    --secondary: rgb(59, 130, 246);
+    --btn_white: white;
+    --linear-gradient: var(--primary3), var(--primary4);
+    --linear-gradient3: rgba(0, 0, 0, 1), var(--primary2), var(--primary), rgba(255, 251, 0, 0.851);
+    --scrollbar-color: var(--primary3) var(--primary4);
+    --bg_color: black;
+    --bg_color2: #262626;
+    --text_color: white;
+    --btn_color: white;
+}

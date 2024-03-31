@@ -1,0 +1,28 @@
+header {
+    .header_contant{
+        #header_child2{
+            .header_child_1{
+                h4{
+                    font-size: 25px;
+                    padding: 1rem 0;
+                    color: gray;
+                    display:inline-block;
+                    background: linear-gradient(#191919, #191919),
+                        linear-gradient(to right, var(--boder-linear-gradient));
+                    background-origin: padding-box, border-box;
+                    background-repeat: no-repeat;
+                    /* this is important */
+                    border-bottom: 2px solid transparent;
+                }
+                #projectes4{
+                    margin-top: 5rem;
+                    background:linear-gradient(var(--primary),var(--primary2));
+                    color:black;
+                }
+            }
+
+        }
+
+    }
+
+}

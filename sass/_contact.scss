@@ -1,0 +1,166 @@
+header {
+    .header_contant {
+        .header_contant_child {
+            .header_child {
+                .contact {
+                    padding: 5rem;
+                    @include displaygrid(2, 30px, 1fr);
+                    grid-template-columns: 30% 70%;
+
+                    .contact_child {
+                        h2 {
+                            font-size: 30px;
+                        }
+
+                        h1 {
+                            font-size: 35px;
+                            color: var(--primary);
+                            line-height: 38px;
+                            padding: 1.5rem 0;
+                        }
+
+                        p {
+                            padding: 1rem 0;
+                            color: lightgray;
+                            font-size: 18px;
+                        }
+
+                        .contact_info {
+                            ul {
+                                li {
+                                    list-style: none;
+                                    padding: 0.5rem 0;
+                                    color: lightgray;
+
+                                    i {
+                                        font-size: 20px;
+                                        padding: 0 0.3rem;
+                                    }
+
+                                    a {
+                                        color: white;
+                                        border-bottom: 1px solid var(--primary);
+
+                                        &:hover {
+                                            border-bottom: 2px solid var(--primary);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        form {
+                            border: 1px solid rgba(86, 86, 86, 0.56);
+                            box-shadow: 10px 10px rgb(73, 73, 73);
+
+                            .input {
+                                @include displaygrid(3, 10px, 1fr);
+                                padding: 1rem 1rem;
+
+                                input {
+                                    padding: 0.8rem 0.5rem;
+                                    border-radius: 0;
+                                    border: none;
+                                    outline: none;
+                                    background-color: rgb(37, 37, 37);
+                                    color: white;
+                                    border-bottom: 2px solid var(--secondary);
+                                }
+
+                                select {
+                                    padding: 0.8rem 0.5rem;
+                                    border-radius: 0;
+                                    border: none;
+                                    outline: none;
+                                    background-color: rgb(37, 37, 37);
+                                    color: rgb(162, 162, 162);
+                                    border-bottom: 2px solid var(--secondary);
+                                }
+                            }
+
+                            .select {
+                                @include displaygrid(3, 10px, 1fr);
+                                padding: 1rem 1rem;
+
+                                div {
+                                    display: grid;
+                                    gap: 20px;
+                                    grid-template-columns: 10% 80%;
+                                    font-size: 15px;
+                                    color: rgb(162, 162, 162);
+
+                                    input {
+                                        padding: 1rem;
+                                        border: none;
+                                        outline: none;
+                                    }
+                                }
+                            }
+
+                            .radio {
+                                @include displaygrid(3, 10px, 1fr);
+                                padding: 1rem 1rem;
+                                font-size: 15px;
+                                color: rgb(162, 162, 162);
+                                text-align: start;
+
+                                input {
+                                    padding: 1rem;
+                                    width: 50px;
+                                    height: 20px;
+                                    border: none;
+                                    outline: none;
+                                }
+                            }
+
+                            .text {
+                                @include displaygrid(1, 0px, 1fr);
+                                padding: 1rem 1rem;
+
+                                textarea {
+                                    padding: 0.8rem 0.5rem;
+                                    border-radius: 0;
+                                    border: none;
+                                    outline: none;
+                                    background-color: rgb(37, 37, 37);
+                                    color: white;
+                                    font-size: 15px;
+                                    border-bottom: 2px solid var(--secondary);
+                                }
+                            }
+
+                            .submit {
+                                padding: 1rem  1rem 2rem 1rem;
+                                input {
+                                    padding: 0.5rem 4rem;
+                                    margin-left: 10px;
+                                    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+                                    background-color: white;
+                                    color: rgb(33, 33, 33);
+                                    font-size: 15px;
+                                    transition: all 0.2s;
+                                    box-shadow: var(--box-shadow);
+
+                                    &:hover {
+                                        box-shadow: none;
+                                        margin-left: 15px;
+                                    }
+                                }
+                            }
+
+                            h3 {
+                                font-weight: normal;
+                                font-size: 15px;
+                                color: rgb(216, 216, 216);
+                                padding: 1rem 1rem;
+                                background-color: rgb(41, 41, 41);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
